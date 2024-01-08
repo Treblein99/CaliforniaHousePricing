@@ -1,6 +1,5 @@
 import pickle
 import json
-from django.shortcuts import render
 from flask import Flask,request,app,jsonify,url_for,render_template
 import numpy as np
 import pandas as pd
@@ -34,4 +33,4 @@ def predict():
 
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(debug=True,host="0.0.0.0",port=5000)
